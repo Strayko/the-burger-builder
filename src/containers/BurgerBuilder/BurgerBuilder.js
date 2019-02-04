@@ -23,7 +23,7 @@ state = {
     cheese: 0,
     meat: 0
   },
-  totalPrice: 4
+  totalPrice: 0
 }
 
 addIngredientHandler = (type) => {
@@ -69,7 +69,8 @@ removeIngredientHandler = (type) => {
         <BuildControls 
           ingredientAdded={this.addIngredientHandler}
           ingredientRemove={this.removeIngredientHandler}
-          disabled={disabledInfo} />
+          disabled={disabledInfo}
+          price={this.state.totalPrice} />
       </Aux>
     );
   }
