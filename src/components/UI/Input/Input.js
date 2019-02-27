@@ -22,7 +22,7 @@ const input = (props) => {
       inputElement = <input 
         className={classes.InputElement} 
         {...props.elementConfig} 
-        value={props.value} />;
+          value={props.value} />;
   }
 
   return (
